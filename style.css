@@ -1,0 +1,239 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    color: #ffffff; /* White text for contrast */
+    background-color: #1a2a6c; /* Deep blue background */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0f3460; /* Darker blue for navbar */
+    color: white;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Add spacing between links */
+}
+
+.navbar .nav-links li {
+    margin: 0; /* Remove left margin since links are centered */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 500; /* Slightly bold font */
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #bbdefb; /* Light blue highlight on hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background-image: url('pics/Myself.JPG'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    background-color: rgba(17, 39, 89, 0.8); /* Semi-transparent deep blue overlay */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px; /* Limit the width of the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.hero-content h1 {
+    font-size: 56px; /* Larger font size */
+    font-weight: 700; /* Bold font */
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a2a6c; /* Deep blue background */
+}
+
+.about-section {
+    background-color: #0f3460; /* Darker blue */
+}
+
+.about-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white; /* White text */
+}
+
+.about-section p {
+    font-size: 20px;
+    color: #bbdefb; /* Light blue for paragraphs */
+}
+
+.projects-section {
+    background-color: #0f3460; /* Darker blue */
+}
+
+.projects-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white; /* White text */
+}
+
+.hobbies-section {
+    background-color: #1a2a6c; /* Deep blue */
+}
+
+.hobbies-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white; /* White text */
+}
+
+.hobbies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Add spacing between hobbies */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the hobbies list */
+}
+
+.hobby-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hobby-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white; /* White text */
+}
+
+.hobby-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hobby-images img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border: 2px solid #bbdefb; /* Light blue border */
+}
+
+.hobby-images img:hover {
+    transform: scale(1.1); /* Enlarge image on hover */
+    border-color: white; /* Highlight border on hover */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #0f3460; /* Darker blue */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text */
+    display: block; /* Make the link behave like a block element */
+    border: 2px solid #bbdefb; /* Light blue border */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    border-color: white; /* Highlight border on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #0f3460; /* Darker blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: white; /* White text */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    color: #bbdefb; /* Light blue for text */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    border-radius: 50%; /* Circular icons */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
+}
